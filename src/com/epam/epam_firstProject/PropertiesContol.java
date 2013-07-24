@@ -53,7 +53,7 @@ public class PropertiesContol {
 				
 				if (propertiesFileName.equals("tv.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "75");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -61,7 +61,7 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("refrigerator.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "145");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -69,8 +69,8 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("microwave.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "1200");
+					prop.setProperty("powerClass", "C");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
@@ -85,7 +85,7 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("notebook.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "80");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -93,39 +93,39 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("iron.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "990");
+					prop.setProperty("powerClass", "C");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("hairdryer.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "1800");
+					prop.setProperty("powerClass", "D");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("kettle.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "2000");
+					prop.setProperty("powerClass", "D");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("toster.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "800");
+					prop.setProperty("powerClass", "C");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("mixer.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "195");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -134,15 +134,15 @@ public class PropertiesContol {
 				if (propertiesFileName.equals("mincer.properties")) {
 				
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "600");
+					prop.setProperty("powerClass", "B");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("dvd.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "35");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -150,7 +150,7 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("gameConsol.properties")) {
 
-					prop.setProperty("power", "100");
+					prop.setProperty("power", "25");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
@@ -166,16 +166,16 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("conditioner.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "700");
+					prop.setProperty("powerClass", "B");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
 				}
 				if (propertiesFileName.equals("washingMachine.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "650");
+					prop.setProperty("powerClass", "B");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
@@ -190,8 +190,8 @@ public class PropertiesContol {
 				}
 				if (propertiesFileName.equals("cooker.properties")) {
 
-					prop.setProperty("power", "100");
-					prop.setProperty("powerClass", "A");
+					prop.setProperty("power", "3500");
+					prop.setProperty("powerClass", "D");
 					prop.setProperty("powerOn", "false");
 					prop.store(ous, null);
 
