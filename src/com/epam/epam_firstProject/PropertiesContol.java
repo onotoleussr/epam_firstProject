@@ -28,7 +28,6 @@ public class PropertiesContol {
 		filesList.add("hairdryer.properties");
 		filesList.add("kettle.properties");
 		filesList.add("toster.properties");
-		filesList.add("steamer.properties");
 		filesList.add("mixer.properties");
 		filesList.add("mincer.properties");
 		filesList.add("dvd.properties");
@@ -43,21 +42,160 @@ public class PropertiesContol {
 
 	private void FillProperties() {
 
+		String propertiesFileName = new String();
+
 		for (int i = 0; i < filesList.size(); i++) {
 
 			try {
+
+				propertiesFileName = filesList.get(i).toString();
+				ous = new FileOutputStream(propertiesFileName);
 				
-				if(filesList.get(i).toString().equals("tv.properties")){
-				
-					ous = new FileOutputStream(filesList.get(i).toString());
-					
+				if (propertiesFileName.equals("tv.properties")) {
+
 					prop.setProperty("power", "100");
 					prop.setProperty("powerClass", "A");
 					prop.setProperty("powerOn", "false");
-					prop.store(ous,	null);
-					
+					prop.store(ous, null);
+
 				}
+				if (propertiesFileName.equals("refrigerator.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("microwave.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("computer.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("notebook.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("iron.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("hairdryer.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("kettle.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("toster.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("mixer.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("mincer.properties")) {
 				
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("dvd.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("gameConsol.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("audioSystem.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("conditioner.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("washingMachine.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("dishwasher.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
+				if (propertiesFileName.equals("cooker.properties")) {
+
+					prop.setProperty("power", "100");
+					prop.setProperty("powerClass", "A");
+					prop.setProperty("powerOn", "false");
+					prop.store(ous, null);
+
+				}
 
 			} catch (IOException ex) {
 				ex.printStackTrace();
