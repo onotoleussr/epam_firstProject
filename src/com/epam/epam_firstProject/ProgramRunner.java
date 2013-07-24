@@ -8,7 +8,21 @@ public class ProgramRunner {
 
 	public static void main(String[] args) {
 	
-
+		PropertiesContol propCont = new PropertiesContol();
+		
+		propCont.setProperties();
+		
+//		DataUser du = new DataUser();
+//		du.SetList();
+//		du.test();
+//		du.FillProperties();
+		
+		//System.out.println(du.toString());
+		
+//		du.test();
+		
+		
+		
 /*	Properties testProp = new Properties();
 	testProp.put("first", 1);
 	testProp.put("second", 2);
@@ -17,7 +31,7 @@ public class ProgramRunner {
 	
 	
 	
-  	Properties prop = new Properties();
+ /* 	Properties prop = new Properties();
   	 
 	try {
 		//set the properties value
@@ -31,7 +45,7 @@ public class ProgramRunner {
 	} catch (IOException ex) {
 		ex.printStackTrace();
     }
-
+*/
 	
 	
 	
