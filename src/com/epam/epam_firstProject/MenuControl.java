@@ -1,46 +1,71 @@
 package com.epam.epam_firstProject;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.Console;
 
 public class MenuControl {
 
-	private int selectedMenuItem = 0;
-	
-	public void showMenu(){
-		
+	private ArrayList<String> menuItemsAL = new ArrayList<String>();
+	private String menuValuesStr = new String();
+
+	public MenuControl() {
+
+		setMenuItems();
+		setMenuValuesStr();
+
+	}
+
+	public void showMenu() {
+
 		System.out.println("::МЕНЮ::");
-		
-		System.out.println("Для включения некоторых приборво и расчета потребляемой мощности введите: 1");
-		System.out.println("Для сортировки по классу потребления мощьности введите: 2");
-		System.out.println("Для сортировки по потребляемой мощьности введите: 3");
-		System.out.println("Для отбора по потребляемой мощьности введите: 4\n\n");
-		
-		selectedMenuItem = getIntFromKeybord("[1,2,3,4]: ");
-		
-//		ClearConsole();
-		
-		System.out.println(selectedMenuItem);
-		
+
+		showMenuItems();
+
 	}
-	
-	private int getIntFromKeybord(String outText){
-		
-		int num = 0;
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print(outText.toString());
-		
-		num = (int) sc.nextInt();
-		
-		return num;
+
+	private void setMenuItems() {
+
+		if (!menuItemsAL.isEmpty()) {
+			menuItemsAL.clear();
+		}
+
+		menuItemsAL.add("Для окончания работы введите: 0");
+		menuItemsAL
+				.add("Для включения некоторых приборво и расчета потребляемой мощности введите: 1");
+		menuItemsAL
+				.add("Для сортировки по классу потребления мощьности введите: 2");
+		menuItemsAL.add("Для сортировки по потребляемой мощьности введите: 3");
+		menuItemsAL.add("Для отбора по потребляемой мощьности введите: 4");
+
 	}
-	
-//	public void ClearConsole() {
-//
-//		System.console().flush();
-//
-//	}	
-	
+
+	private void setMenuValuesStr() {
+
+		menuValuesStr = "";
+		for (Integer i = 1; i < menuItemsAL.size(); i++) {
+			menuValuesStr = menuValuesStr.concat(i.toString()).concat(",");
+		}
+		menuValuesStr = menuValuesStr.concat("0");
+
+	}
+
+	private void showMenuItems() {
+
+		if (!menuItemsAL.isEmpty()) {
+
+			for (int i = 1; i < menuItemsAL.size(); i++) {
+				System.out.println(menuItemsAL.get(i));
+			}
+			System.out.println(menuItemsAL.get(0));
+		}
+
+	}
+
+	public String getmenuValuesStr() {
+
+		return menuValuesStr;
+
+	}
+
 }

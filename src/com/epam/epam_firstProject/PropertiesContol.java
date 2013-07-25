@@ -261,11 +261,23 @@ public class PropertiesContol {
 
 		for (int i = 0; i < filesList.size(); i++) {
 
-			Tech techObj = new Tech();
 			locProp = new Properties();
 
 			locProp = GetProperties(filesList.get(i));
 
+			if(locProp.getProperty("techClass").equals("BigTech")){
+				
+			}else if(locProp.getProperty("techClass").equals("SmallTech")){
+			
+			}else if(locProp.getProperty("techClass").equals("TvAudioTech")){
+			
+			}else {
+				
+			}
+				
+			Tech techObj = new Tech();
+			
+			
 			techObj.setName(locProp.getProperty("name"));
 			techObj.setPower(Integer.parseInt(locProp.getProperty("power")));
 			techObj.setPowerClass(locProp.getProperty("powerClass"));
@@ -273,7 +285,7 @@ public class PropertiesContol {
 			if (locProp.getProperty("powerOn").equals("true")) {
 				techObj.setPowerOn();
 			} else {
-				techObj.setPowerOn();
+				techObj.setPowerOff();
 			}
 
 			techArr.add(techObj);
